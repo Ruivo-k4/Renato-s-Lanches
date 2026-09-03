@@ -19,5 +19,13 @@ let footer = document.querySelector("#footerIndex");
 
 if (footer) {
     footer.innerHTML = 
-    `<div clas="`
+    `<div clas="footer_info"></div>
+    <div class="footer_contacts">
+        <ul>
+            <li><a href="#"><img src="#" alt="IMAGEM"></a></li>
+            <li><a href="#"><img src="#" alt="IMAGEM"></a></li>
+            <li><a href="#"><img src="#" alt="IMAGEM"></a></li>
+            <li><a href="#"><img src="#" alt="IMAGEM"></a></li>
+        </ul>
+    </div>`
 }
