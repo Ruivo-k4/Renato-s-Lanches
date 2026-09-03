@@ -1,0 +1,46 @@
+#menuIndex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--fundo);
+
+    width: 100dvw;
+    height: 12dvh;
+
+    padding: 0 7%;
+
+    .menu_logo {
+        img {
+            width: 15%;
+        }
+    }
+
+    .menu_nav {
+        ul {
+            list-style: none;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            width: clamp(250px, 60dvw, 600px);
+
+            li {
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    font-size: clamp(1rem, 2.5dvw, 1.5rem);
+                    font-weight: bold;
+
+
+                    color: var(--primaria);
+                }
+            }
+        }
+    }
+}
