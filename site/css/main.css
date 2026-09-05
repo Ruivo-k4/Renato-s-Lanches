@@ -1,0 +1,56 @@
+.content {
+    .content_item {
+        
+    }
+
+    #mainHead {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 5% 7%;
+
+        height: 90dvh;
+
+        div {
+            width: 50%;
+        }
+
+        .text {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            justify-content: initial;
+            gap: 2rem;
+
+            h1 {
+                width: clamp(200px, 50dvw, 500px);
+                font-size: clamp(1.5rem, 8dvw, 4rem);
+            }
+
+            p {
+                font-size: clamp(1rem, 1.8dvw, 3rem);
+            }
+
+            button {
+                background-color: var(--primaria);
+                
+                width: clamp(175px, 20dvw, 250px);
+
+                border: none;
+                border-radius: 8px;
+
+                a {
+                    text-decoration: none;
+
+                    color: white;
+                }
+            }
+        }
+
+        .img {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+}
