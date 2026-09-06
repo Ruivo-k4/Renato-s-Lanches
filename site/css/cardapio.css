@@ -1,0 +1,117 @@
+#cardapioContainer {
+    .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        padding: 3% 7%;
+
+        video {
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            filter: brightness(0.6);
+
+            z-index: -1;
+        }
+    }
+
+    #contentTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        h1 {
+            text-transform: uppercase;
+
+            color: var(--secundaria);
+        }
+
+        ul {
+            position: relative;
+            list-style-type: none;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            width: 100%;
+
+            li {
+                text-transform: uppercase;
+                font-size: clamp(1.2rem, 1.3dvw, 3rem);
+                font-weight: bold;
+
+                color: var(--fundo);
+
+                cursor: pointer;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+
+                width: 100%;
+                height: 3px;
+                background-color: var(--fundo);
+            }
+        }
+    }
+
+    #itemProdutos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 2rem;
+
+        .card {
+            display: flex;
+            gap: 1rem;
+
+            #cardImg {
+                width: 50%;
+                aspect-ratio: 1/1;
+
+                object-fit: cover;
+
+                border-radius: 5px;
+            }
+
+            .card_info {
+                display: flex;
+                flex-direction: column;
+                align-items: initial;
+                justify-content: space-between;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: clamp(1rem, 1.6dvw, 2rem);
+
+                    color: var(--secundaria);
+                }
+
+                .info_desc {
+                    color: var(--fundo);
+                    font-size: clamp(1rem, 1.4dvw, 2rem);
+                }
+                
+                .info_val {
+                    color: var(--destaque);
+                    font-size: clamp(1rem, 1.6dvw, 2rem);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

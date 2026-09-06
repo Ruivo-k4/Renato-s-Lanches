@@ -7,9 +7,9 @@ if (menu) {
         </div>
             <div class="menu_item" id="menu_nav">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Cardapio</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cardapio_frame.html">Cardapio</a></li>
+                    <li><a href="sobre_frame.html">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div>
@@ -31,9 +31,9 @@ if (footer) {
         <div class="footer_item" id="footerNav">
         <h1>Navegação</h1>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Cardapio</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cardapio_frame.html">Cardapio</a></li>
+                <li><a href="sobre_frame.html">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </div>

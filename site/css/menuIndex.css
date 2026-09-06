@@ -3,10 +3,10 @@
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--fundo);
+    background-color: var(--primaria);
 
     width: 100dvw;
-    height: 12dvh;
+    height: 15dvh;
 
     padding: 0 2%;
 
@@ -19,6 +19,8 @@
     #menu_logo {
         img {
             width: clamp(70px, 5dvw, 700px);
+
+            border-radius: 50px;
         }
     }
 
@@ -37,7 +39,7 @@
                     text-decoration: none;
                     text-transform: uppercase;
 
-                    color: var(--primaria);
+                    color: var(--fundo);
 
                     font-weight: bold;
                     font-size: clamp(1rem, 1.5dvw, 2rem);
@@ -52,14 +54,18 @@
             align-items: center;
             justify-content: space-evenly;
 
-            background-color: var(--primaria);
+            background-color: var(--destaque);
             color: var(--fundo);
+            
+            text-transform: uppercase;
+            font-size: 100%;
+            font-weight: bolder;
 
             border: none;
             border-radius: 5px;
 
-            width: clamp(100px, 5dvw, 500px);
-            height: 5dvh;
+            width: clamp(100px, 10dvw, 500px);
+            height: 8dvh;
         }
     }
 }

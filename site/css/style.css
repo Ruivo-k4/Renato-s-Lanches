@@ -2,6 +2,8 @@
 @import url(menuIndex.css);
 @import url(footerIndex.css);
 @import url(main.css);
+@import url(cardapio.css);
+@import url(sobre.css);
 
 * {
     padding: 0;
@@ -13,6 +15,17 @@
 
 html {
     overflow-x: hidden;
+
+    background-color: var(--fundo);
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
 }
 
 .container {
