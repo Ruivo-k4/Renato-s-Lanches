@@ -3,10 +3,18 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
 
-        padding: 5% 7%;
+        padding: 3% 7%;
 
         #contentTitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+
             h1 {
                 position: relative;
                 width: 15dvw;
@@ -22,6 +30,78 @@
                     height: 1dvh;
                     background-color: var(--primaria);
                     border-radius: 5px;
+                }
+            }
+        }
+
+        #contentInfo {
+            display: grid;
+            grid-template-columns: 35% 60%;
+            grid-template-rows: 1fr;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .item_text {
+                font-size: clamp(1.2rem, 1.8dvw, 4rem);
+                word-spacing: 0.5rem;
+                line-height: 1.5;
+            }
+
+            .item_img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                img {
+                    width: 100%;
+                    
+                    border-radius: 5px;
+                    
+                    object-fit: cover;
+                }
+            }
+        }
+
+        #contentDesc {
+            background-color: var(--primaria);
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            padding: 0 8%;
+
+            width: 100%;
+            height: 25dvh;
+
+            border-radius: 5px;
+
+            .item_element {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                height: 100%;
+
+                img {
+                    object-fit: cover;
+
+                    width: 50%;
+                    aspect-ratio: 1/1;
+                }
+
+                p {
+                    text-transform: uppercase;
+
+                    width: 50%;
+
+                    font-size: clamp(1rem, 1dvw, 2rem);
+
+                    color: var(--fundo);
                 }
             }
         }

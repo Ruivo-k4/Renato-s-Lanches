@@ -10,7 +10,7 @@ if (menu) {
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="cardapio_frame.html">Cardapio</a></li>
                     <li><a href="sobre_frame.html">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="contato_frame.html">Contato</a></li>
                 </ul>
             </div>
             <div class="menu_item" id="menu_action">
@@ -34,7 +34,7 @@ if (footer) {
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="cardapio_frame.html">Cardapio</a></li>
                 <li><a href="sobre_frame.html">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="contato_frame.html">Contato</a></li>
             </ul>
         </div>
 

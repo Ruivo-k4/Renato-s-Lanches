@@ -1,0 +1,44 @@
+#c-contato {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: space-between;
+
+        padding: 5% 7%;
+
+        .content_item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #c-contacts {
+            gap: 2rem;
+
+            .c-contacts_item {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                img {
+                    width: clamp(80px, 2dvw, 450px);
+                    aspect-ratio: 1/1;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                }
+            }
+        }
+
+        #c-forms {
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem   ;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@
 @import url(main.css);
 @import url(cardapio.css);
 @import url(sobre.css);
+@import url(contato.css);
 
 * {
     padding: 0;
