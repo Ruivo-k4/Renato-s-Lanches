@@ -34,10 +34,52 @@
         }
 
         #c-forms {
+            background-color: var(--destaque);
+            padding: 2% 2%;
+
+            border-radius: 10px;
+
             form {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 gap: 1rem   ;
+
+                button {
+                    background-color: var(--primaria);
+                    color: var(--fundo);
+
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: clamp(1rem, 1.2dvw, 2rem);
+
+                    width: 60%;
+                    aspect-ratio: 8/1;
+
+                    border: none;
+                    border-radius: 20px;
+
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: translateY(-2px);
+                        background-color: var(--secundaria);
+
+                        box-shadow: 5px 5px 20px var(--secundaria);
+
+                        cursor: pointer;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    aspect-ratio: 12/1;
+
+                    padding-left: 1rem;
+                    border: none;
+                    border-radius: 15px;
+                }
             }
         }
     }

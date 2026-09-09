@@ -6,7 +6,7 @@ if (forms) {
     btn.addEventListener('click', () => {
         let msg = document.querySelector("#inMensage");
         let mensagem = `${msg.value}`;
-        alert(mensagem)
+
         let url = `https://wa.me/5511911986528?text=${encodeURIComponent(mensagem)}`;
 
         forms.action = url;
