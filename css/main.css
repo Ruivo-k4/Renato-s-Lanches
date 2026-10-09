@@ -1,0 +1,8 @@
+.container__main {
+    padding: 0 7%;
+    .hero {
+        .hero__img {
+            width: 20dvw;
+        }
+    }
+}
