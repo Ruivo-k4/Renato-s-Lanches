@@ -1,8 +1,35 @@
-.container__main {
-    padding: 0 7%;
+#mainIndex {
     .hero {
+        display: flex;
+        flex-direction: column;
+
         .hero__img {
             width: 20dvw;
+        }
+
+    }
+    .cardapio {
+        width: 100%;
+
+        .hero {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .hero__string {
+
+            }
+
+            .hero__button {
+                background-color: none;
+
+                border-radius: 15px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

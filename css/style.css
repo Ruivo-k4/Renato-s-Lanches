@@ -1,6 +1,7 @@
 @import url(colors.css);
 @import url(header.css);
 @import url(main.css);
+@import url(slider.css);
 
 * {
     padding: 0;
@@ -8,17 +9,12 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100dvw;
-    min-height: 100dvh;
-}
-
 .container {
     display: grid;
     grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer";
+    "header"
+    "main"
+    "footer";
     grid-template-rows: auto 1fr auto;
     gap: 2rem;
 
