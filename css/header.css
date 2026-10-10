@@ -1,5 +1,5 @@
 .container__header {
-    background-color: var(--fundo);
+    background-color: var(--fundo-card);
 
     .menu {
         display: grid;
@@ -21,9 +21,17 @@
 
             list-style-type: none;
 
+            height: 100%;
+
             li {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
                 a {
                     color: var(--texto);
+                    text-align: center;
 
                     text-decoration: none;
                 }
