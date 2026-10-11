@@ -1,0 +1,14 @@
+.container__footer {
+    background-color: var(--fundo-card);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+    border-top: 2px solid var(--borda);
+
+    img {
+        width: 8dvw;
+    }
+}

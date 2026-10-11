@@ -41,7 +41,7 @@
 
             font-weight: bold;
 
-            width: 27%;
+            width: 30%;
         }
 
     }
@@ -266,6 +266,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: initial;
+            gap: 4%;
 
             padding: 10%;
             border: 2px var(--borda) solid;
@@ -274,7 +275,20 @@
             height: 100%;
 
             input {
+                background: none;
+                color: var(--texto);
+
+                outline: none;
+                
                 width: 100%;
+
+                border: 2px var(--borda) solid;
+                border-radius: 15px;
+
+                padding: 0 5%;
+
+                font-size: 1.1rem;
+                font-weight: bold;
             }
 
             h1 {
@@ -284,6 +298,26 @@
                 font-size: 1.5rem;
 
                 width: 100%;
+            }
+
+            .menssage__in {
+                height: 15%;
+            }
+
+            .menssage__in-msg {
+                height: 30%;
+
+                padding-bottom: 10%;
+            }
+
+            button {
+                background-color: var(--principal);
+                width: 100%;
+
+                border: none;
+                border-radius: 15px;
+
+                padding: 2%;
             }
         }
     }
