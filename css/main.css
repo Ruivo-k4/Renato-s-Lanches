@@ -1,63 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
 #mainIndex {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
 
-    padding: 0 7%;
-
+    .masc {
+        padding: 0 7%;
+    }
 
     .hero_index {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
+        height: 100dvh;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
 
-        height: 80dvh;
+        padding: 0 7%;
 
         p {
             font-size: 1.5rem;
-
             text-transform: uppercase;
-
             color: var(--texto);
         }
 
         .hero__img {
             width: 35dvw;
+            max-width: 350px;
+            height: auto;
         }
 
         .hero__back {
             display: flex;
             position: absolute;
-
-            width: 100%;
+            width: 100dvw;
             height: 100%;
 
             object-fit: cover;
-
+            
             top: 0;
             left: 0;
-
+            
             z-index: -2;
-
         }
 
         button {
             background-color: var(--principal);
-
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 5%;
-
-            padding: 1%;
+            padding: 1rem 1.5rem;
             border: none;
             border-radius: 25px;
-
             font-weight: bold;
-
             width: 30%;
+            min-width: 180px;
+            cursor: pointer;
         }
 
         &::after {
@@ -67,11 +70,9 @@
             left: 0;
             width: 100%;
             height: 5%;
-
             background: linear-gradient(to bottom,
                     transparent,
                     #0b0c0e);
-
             pointer-events: none;
         }
     }
@@ -81,36 +82,33 @@
         align-items: center;
         justify-content: space-between;
         gap: 5rem;
+        box-sizing: border-box;
 
         img {
             width: 40%;
+            max-width: 400px;
             aspect-ratio: 1/1;
             object-fit: cover;
+            border-radius: 12px;
         }
 
         .desc {
             h1 {
                 color: var(--texto);
-
                 font-size: 3rem;
             }
 
             h2 {
                 color: var(--principal);
-
                 text-transform: uppercase;
-
                 font-size: 1.5rem;
             }
 
             h3 {
                 color: var(--principal);
                 transform: rotate(-3deg);
-
                 font-size: 1.5rem;
-
                 padding: 0 2%;
-
                 font-family: "Dancing Script", cursive;
                 font-optical-sizing: auto;
                 font-weight: bold;
@@ -121,17 +119,17 @@
 
     .cardapio {
         width: 100%;
-
         min-height: 600px;
+        box-sizing: border-box;
 
         .hero {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             padding: 0 2%;
-
             height: 35%;
+            gap: 2rem;
+            box-sizing: border-box;
 
             .hero__string {
                 h1 {
@@ -141,15 +139,12 @@
 
                 h2 {
                     color: var(--principal);
-
                     text-transform: uppercase;
-
                     font-size: 2rem;
                 }
 
                 p {
                     font-size: 1.3rem;
-
                     color: var(--texto-secundario);
                 }
             }
@@ -157,17 +152,16 @@
             .hero__button {
                 background-color: var(--fundo);
                 color: var(--principal);
-
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 5%;
-
                 border: 2px var(--principal) solid;
                 border-radius: 20px;
-                padding: 1%;
-
+                padding: 1rem 1.5rem;
                 width: 25%;
+                min-width: 160px;
+                box-sizing: border-box;
 
                 &:hover {
                     cursor: pointer;
@@ -179,24 +173,21 @@
     .contacts {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-row: 1fr;
         gap: 5rem;
         align-items: center;
         justify-content: space-between;
+        box-sizing: border-box;
 
         .info {
             .info__sub_title {
                 color: var(--principal);
-
                 font-weight: bold;
                 font-size: 1.5rem;
                 text-transform: uppercase;
-
             }
 
             .info__title {
                 color: var(--texto);
-
                 font-size: 3rem;
             }
 
@@ -204,36 +195,31 @@
                 list-style-type: none;
                 display: flex;
                 gap: 5%;
-
                 padding: 0;
                 margin: 5% 0 0 0;
-
                 min-height: 150px;
 
                 li {
                     min-height: 100%;
                     width: 100%;
-
                     border: none;
 
                     .card {
                         background-color: var(--fundo);
-
                         display: flex;
                         flex-direction: column;
-                        gap: 1%;
-
+                        gap: 1rem;
                         border: none;
-
                         height: 100%;
                         width: 100%;
+                        padding: 1.5rem;
+                        box-sizing: border-box;
+                        border-radius: 12px;
 
                         i {
                             color: var(--principal);
-
                             font-size: 3rem;
                             padding-bottom: 5%;
-
                             border-radius: 50px;
                             width: 3rem;
                         }
@@ -244,41 +230,34 @@
 
                         p {
                             color: var(--texto);
-
                             font-size: 0.80rem;
                         }
                     }
 
                     h1 {
                         font-size: large;
-
                         padding: 0;
                         margin: 0;
                     }
 
                     p {
                         font-size: 1rem;
-
                         padding: 0;
                         margin: 0;
                     }
                 }
-
             }
 
             .locate {
                 display: flex;
                 align-items: center;
                 gap: 3%;
-
                 padding: 0;
                 margin: 0;
-
-                height: 35px;
+                min-height: 35px;
 
                 i {
                     color: var(--principal);
-
                     font-size: 2rem;
                 }
 
@@ -291,63 +270,187 @@
 
         form {
             background-color: var(--borda-fundo);
-
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: initial;
-            gap: 4%;
-
-            padding: 10%;
+            gap: 1.5rem;
+            padding: 8% 10%;
             border: 2px var(--borda) solid;
             border-radius: 15px;
-
             height: 100%;
+            box-sizing: border-box;
 
             input {
                 background: none;
                 color: var(--texto);
-
                 outline: none;
-
                 width: 100%;
-
+                height: 45px;
                 border: 2px var(--borda) solid;
                 border-radius: 15px;
-
                 padding: 0 5%;
-
                 font-size: 1.1rem;
                 font-weight: bold;
+                box-sizing: border-box;
             }
 
             h1 {
                 color: var(--texto);
-
                 text-align: start;
                 font-size: 1.5rem;
-
                 width: 100%;
+                margin: 0;
             }
 
             .menssage__in {
-                height: 15%;
+                width: 100%;
             }
 
             .menssage__in-msg {
-                height: 30%;
-
-                padding-bottom: 10%;
+                width: 100%;
+                height: 120px;
+                resize: vertical;
             }
 
             button {
                 background-color: var(--principal);
                 width: 100%;
-
                 border: none;
                 border-radius: 15px;
+                padding: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}
 
-                padding: 2%;
+@media (max-width: 1024px) {
+    #mainIndex {
+        padding: 0 4%;
+        gap: 4rem;
+
+        .hero_index {
+            .hero__img {
+                width: 50dvw;
+            }
+            button {
+                width: 45%;
+            }
+        }
+
+        .bio {
+            gap: 3rem;
+            img {
+                width: 45%;
+            }
+            .desc {
+                h1 { font-size: 2.5rem; }
+            }
+        }
+
+        .cardapio {
+            .hero {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+                gap: 1.5rem;
+
+                .hero__string {
+                    h1 { font-size: 3rem; }
+                    h2 { font-size: 1.5rem; }
+                }
+
+                .hero__button {
+                    width: 50%;
+                }
+            }
+        }
+
+        .contacts {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+
+            .info {
+                .info__title { font-size: 2.5rem; }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #mainIndex {
+        padding: 0 5%;
+        gap: 3rem;
+
+        .hero_index {
+            height: 70dvh;
+            
+            p { font-size: 1.2rem; }
+
+            .hero__img {
+                width: 70dvw;
+            }
+
+            button {
+                width: 70%;
+            }
+        }
+
+        .bio {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+
+            img {
+                width: 70%;
+                max-width: 280px;
+            }
+
+            .desc {
+                h1 { font-size: 2.2rem; }
+                h2 { font-size: 1.3rem; }
+                h3 { font-size: 1.3rem; }
+            }
+        }
+
+        .cardapio {
+            min-height: auto;
+            
+            .hero {
+                .hero__string {
+                    h1 { font-size: 2.5rem; }
+                    h2 { font-size: 1.2rem; }
+                    p { font-size: 1rem; }
+                }
+
+                .hero__button {
+                    width: 100%;
+                }
+            }
+        }
+
+        .contacts {
+            .info {
+                .info__title { font-size: 2.2rem; }
+                .info__sub_title { font-size: 1.2rem; }
+
+                .info__list {
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    
+                    li .card {
+                        padding: 1rem;
+                    }
+                }
+            }
+
+            form {
+                padding: 10% 6%;
+                gap: 1rem;
+
+                h1 { font-size: 1.3rem; }
             }
         }
     }

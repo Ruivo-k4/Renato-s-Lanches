@@ -3,6 +3,7 @@
 @import url(main.css);
 @import url(slider.css);
 @import url(footer.css);
+@import url(cardapio.css);
 
 * {
     padding: 0;
@@ -32,7 +33,6 @@ body {
         "footer footer";
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
-    gap: 2rem;
 
     width: 100%;
     max-width: none;
@@ -56,5 +56,11 @@ body {
     .container__footer {
         grid-area: footer;
         width: 100%;
+    }
+
+    .masc {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 }

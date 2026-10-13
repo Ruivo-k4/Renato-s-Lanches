@@ -1,0 +1,235 @@
+
+/* PÁGINA DO CARDÁPIO */
+
+.cardapio-page {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 5% 5rem;
+}
+
+/* INTRODUÇÃO */
+
+.cardapio-page__intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cardapio-page__subtitulo {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    color: var(--principal);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.cardapio-page__titulo {
+    color: var(--texto);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.cardapio-page__titulo span {
+    color: var(--principal);
+}
+
+.cardapio-page__descricao {
+    max-width: 500px;
+    margin: 0 auto;
+    color: var(--texto-secundario);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* GRADE DOS PRODUTOS */
+
+.cardapio-page__produtos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+/* CARD */
+
+.produto-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+
+    background-color: var(--fundo-card);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--principal);
+}
+
+.produto-card__imagem {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    background-color: var(--borda);
+}
+
+.produto-card__conteudo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 1.2rem;
+}
+
+.produto-card__nome {
+    margin-bottom: 0.6rem;
+    color: var(--texto);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.produto-card__descricao {
+    flex: 1;
+    margin-bottom: 1.2rem;
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.produto-card__rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.produto-card__preco {
+    color: var(--principal);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.produto-card__categoria {
+    color: var(--texto-secundario);
+    font-size: 0.72rem;
+    text-align: right;
+}
+
+/* BOTÃO DE VOLTAR */
+
+.cardapio__voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    padding: 0.75rem 1.2rem;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+
+    color: var(--texto);
+    background-color: var(--fundo-card);
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.cardapio__voltar:hover {
+    color: var(--fundo);
+    background-color: var(--principal);
+    border-color: var(--principal);
+}
+
+.cardapio__voltar-footer {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--principal);
+    text-decoration: none;
+}
+
+.cardapio__voltar-footer:hover {
+    color: var(--principal-hover);
+}
+
+/* ESTADOS */
+
+.cardapio-page__carregando {
+    grid-column: 1 / -1;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: var(--texto-secundario);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1100px) {
+    .cardapio-page__produtos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .cardapio-page {
+        padding: 1rem 5% 3rem;
+    }
+
+    .cardapio-page__produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .produto-card__conteudo {
+        padding: 1rem;
+    }
+
+    .produto-card__nome {
+        font-size: 1rem;
+    }
+
+    .produto-card__preco {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardapio-page__produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .produto-card {
+        display: grid;
+        grid-template-columns: 38% minmax(0, 1fr);
+    }
+
+    .produto-card__imagem {
+        height: 100%;
+        min-height: 170px;
+        aspect-ratio: auto;
+    }
+
+    .produto-card__conteudo {
+        padding: 0.9rem;
+    }
+
+    .produto-card__descricao {
+        font-size: 0.82rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .produto-card__nome {
+        font-size: 0.95rem;
+    }
+
+    .produto-card__rodape {
+        flex-wrap: wrap;
+    }
+}

@@ -1,1 +1,3 @@
-import './imgsSlider.js'
+import './imgsSlider.js';
+import './cardapio.js';
+import './links.js';
